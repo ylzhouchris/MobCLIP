@@ -53,6 +53,15 @@ For detailed usage demonstration, please find the tutorial notebook: [MobCLIP us
 
 We construct a benchmark dataset of 11 downstream prediction tasks spanning social, economic, and natural domains at various spatial scales to evaluate the performance of the embeddings. MobCLIP achieves significantly superior performance—improving by over 35\% on average—across all general-purpose tasks. See [Downstream tasks evaluation](evaluation/downstream_evaluation.ipynb)  for a detailed demonstration of downstream usage and evaluation.
 
+
+## Accreditation
+
+Dataset and codebase were created by Wen Ya, Jixuan Cai, Qiyao Ma, and Yulun Zhou. Please cite the following article for all use of the open-sourced dataset and codebase.
+
+Ya Wen and Jixuan Cai and Qiyao Ma and Linyan Li and Xinhua Chen and Chris Webster and Yulun Zhou (2025). MobCLIP: Learning General-purpose Geospatial Representation at Scale. Arxiv. https://arxiv.org/abs/2506.01297.
+     
+     
+
 ![tasks](/figures/tasks.png)
 
 
