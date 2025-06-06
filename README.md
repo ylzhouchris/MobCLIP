@@ -58,6 +58,15 @@ We construct a benchmark dataset of 11 downstream prediction tasks spanning soci
 
 Dataset and codebase were created by Wen Ya, Jixuan Cai, Qiyao Ma, and Yulun Zhou. Please cite the following article for all use of the open-sourced dataset and codebase.
 
+```
+@article{wen2025mobclip,
+  title={MobCLIP: Learning General-purpose Geospatial Representation at Scale},
+  author={Wen, Ya and Cai, Jixuan and Ma, Qiyao and Li, Linyan and Chen, Xinhua and Webster, Chris and Zhou, Yulun},
+  journal={arXiv preprint arXiv:2506.01297},
+  year={2025}
+}
+```
+
 Ya Wen and Jixuan Cai and Qiyao Ma and Linyan Li and Xinhua Chen and Chris Webster and Yulun Zhou (2025). MobCLIP: Learning General-purpose Geospatial Representation at Scale. Arxiv. https://arxiv.org/abs/2506.01297.
      
      
