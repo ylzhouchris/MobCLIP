@@ -61,11 +61,11 @@ class MLP(nn.Module):
     
     
 
-class DistilledMobCLIP(nn.Module):
+class DistilledMoRA(nn.Module):
     def __init__(self, mlp_layer_dims, legendre_polys: int = 32):
         
         
-        super(DistilledMobCLIP, self).__init__()
+        super(DistilledMoRA, self).__init__()
         self.posenc = SphericalHarmonics(legendre_polys=legendre_polys).double()
         self.net = MLP(mlp_layer_dims).double()
         
@@ -78,7 +78,7 @@ class DistilledMobCLIP(nn.Module):
 
 def load(ckpt_path, device):
     ckpt = torch.load(ckpt_path,map_location=device, weights_only=True)
-    model = DistilledMobCLIP([1024] + [512] * 8 + [128]).to(device)
+    model = DistilledMoRA([1024] + [512] * 8 + [128]).to(device)
     model.net.load_state_dict(ckpt['model_state_dict'])
     
     model.eval()
